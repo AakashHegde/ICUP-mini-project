@@ -1,3 +1,6 @@
+import io
+
+
 #This function generates a number randomly and increments the ASCII value of every character of the input by that number
 def encrypt1(filename):
    l=[]
@@ -24,9 +27,6 @@ def decrypt1(filename,key):
    str_decrypt = ''.join(l1) 
    fileobj.close()
    return str_decrypt   
-
-
-
 
 def encrypt2(filename):
    l=[]
@@ -55,9 +55,6 @@ def decrypt2(filename):
    str_decrypt = ''.join(l1) 
    fileobj.close()
    return str_decrypt
-
-
-
 
 def encrypt3(filename):
    l=[]
@@ -90,8 +87,6 @@ def decrypt3(filename):
    
 
 #------------------ADDITIONS--------------------
-
-import io
 
 #Generates a single random number, multiplies whole text with it and reverses it
 #key is one single number generated
@@ -188,16 +183,14 @@ def decrypt6(filename,key):
    my_file.close()
    return str_decrypt
 
-#-----------------------------------------------
-'''   
-x=input("Enter file name : ")
-encr=encrypt4(x)
-print(encr[0])
-dec=decrypt4("encrypted.txt",encr[2])
-print(dec)
-'''
-'''
-t=encrypt3('text.txt')
-print(t[0])
-print(decrypt3('file.txt'))
-'''
+if __name__ == "__main__":
+   ''' 
+   x=input("Enter file name : ")
+   encr=encrypt4(x)
+   print(encr[0]) 
+   dec=decrypt4("encrypted.txt",encr[2])
+   print(dec)
+   t=encrypt3('text.txt')
+   print(t[0])
+   print(decrypt3('file.txt'))
+   '''
